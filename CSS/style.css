@@ -1,0 +1,452 @@
+/* General CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Helvetica';
+    font-weight: 100;
+}
+
+/* Style for the navbar and its elements */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 999;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    transition: all 0.2s ease-in;
+}
+
+.logo {
+    display: inline-block;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.logo img {
+    margin-top: 8px;
+    max-width: 160px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 5px;
+    position: relative;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.botonContacto {
+    border: solid 1px white;
+    padding: 10px 20px;
+    background-color: rgb(64, 188, 64);
+}
+
+/* Style for submenus */
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(64, 188, 64);
+    padding: 0;
+    z-index: 1;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    padding: 10px;
+}
+
+li:hover .submenu {
+    display: block;
+}
+
+/* Style for Video Section */
+
+.video {
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.contenido-video {
+    padding: 0 15px;
+    width: 33%;
+    color: white;
+    margin-top: 419px;
+    margin-left: 20px;
+}
+
+.contenido-video h1 {
+    font-weight: 400;
+}
+
+.contenido-video p {
+    text-align: justify;
+}
+
+.videoCta {
+    border: solid 1px white;
+    text-align: center;
+    width: 90px;
+    margin-left: 150px;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+/* Style for main */
+
+
+/* Contenedor Avalon */
+
+.contenedor1 {
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+    margin-top: 50px;
+    padding-bottom: 125px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/IMG/fondoBlancoHojas.png);
+    background-size: cover;
+    background-position-x: 20% ;
+}
+
+.imagenUno {
+    width: 50%;
+    /* overflow: hidden; */
+    height: auto;
+}
+
+.imagenUno img {
+    width: 500px;
+    margin-left: 100px;
+    box-shadow: 10px 10px 10px grey;
+    transition: opacity 1s ease, transform 0.5s ease;
+    opacity: 0;
+}
+
+.imagenUno img:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgb(87, 87, 87);
+}
+
+.textoUno {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-align: justify;
+    margin: 0px 25px;
+}
+
+.tituloUno {
+    color:rgb(255,255,255);
+    transition: all 1s ease;
+}
+
+.parrafoUno {
+    margin: 20px 0px;
+    color: rgb(255, 255, 255);
+    transition: all 1s ease;
+    position: relative;
+}
+
+.avalonInitiative {
+    margin: 20px 0px;
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    transition: all 1s ease;
+}
+
+.avalonInitiative:hover {
+    text-decoration: underline;
+}
+
+/* Separador */
+
+.separador {
+    position: absolute;
+    margin-top: -205px;
+    width: 1265px;
+}
+
+.separador img {
+    width: 100%;
+}
+
+/* Contenedor Invest */
+
+.invest {
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+    margin-top: -75px;
+}
+
+.imagenInvest {
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+}
+
+.imagenInvest img {
+    width:100%;
+    object-fit: cover;
+}
+
+.textoInvest {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: #B5C38A;
+}
+
+.textoInvest h2 {
+    margin-top: 80px;
+    color: white;
+    opacity: 100;
+    transition: all 0.8s ease;
+}
+
+.textoInvest p {
+    margin: 35px 50px;
+    color: white;
+    opacity: 100;
+    transition: all 0.8s ease;
+}
+
+.textoInvest h3 {
+    color: white;
+    font-family: 'Helvetica';
+    font-weight: 100;
+    font-size: inherit;
+    padding: 5px 0px;
+    margin-left: -319px;
+    opacity: 100;
+    transition: all 0.8s ease;
+}
+
+
+
+.textoInvest a {
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+    transition: all 1s ease;
+    margin-top: 40px;
+}
+
+
+/* CTA Home*/
+
+.ctaHome {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctaSection {
+    width: 1000px;
+    height: 400px;
+    background-color: #DDB791;
+    border-radius: 30px;
+    transition: all 1s ease;
+}
+
+.ctaSection:hover {
+    transform: scale(1.05);
+}
+
+/* Galeria */
+
+.contenedorGaleria {
+    height: 610px;
+    background-color: #FEFAE0;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+}
+
+.imagen {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100);
+    transition: all 1s ease;
+}
+
+.imagen-1 {
+    background-image: url(/IMG/permac1.png);
+}
+
+.imagen-2 {
+    background-image: url(/IMG/permac2.png);
+}
+
+.imagen-3 {
+    background-image: url(/IMG/permac3.png);
+}
+
+.imagen-4 {
+    background-image: url(/IMG/permac4.png);
+}
+
+.imagen-5 {
+    background-image: url(/IMG/permac5.png);
+}
+
+.imagen:hover {
+    flex: 5;
+    filter: grayscale(0);
+    filter: contrast(110%);
+}
+
+/* Stay at Avalon */
+
+.stayAvalon {
+    height: 550px;
+    background-color: #82924B;
+}
+
+/* Contenedor 4 */
+
+
+.contenedorTituloBlog {
+    display:flex;
+    height:100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorBlog{
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    padding-bottom: 100px;
+}
+
+.blog {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloBlog {
+    font-family: Helvetica;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.divImageBlog {
+    margin: 20px 20px 20px 20px;
+    overflow: hidden;
+}
+
+.imageBlog {
+    width:100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.imageBlog:hover {
+    transform: scale(1.05);
+}
+
+
+.textoBlog {
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+}
+
+.botonBlog {
+    color: black;
+    border: solid 1px black;
+    margin-top: 10px;
+}
+
+/* Contenedor 5 */
+
+.contenedor5 {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    background-color: red;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    background-color: black;
+    color:white;
+}
