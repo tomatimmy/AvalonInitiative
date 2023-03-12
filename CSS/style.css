@@ -113,7 +113,6 @@ li:hover .submenu {
     height: 100vh;
     width: 100%;
     transform: translate(-50%, -50%);
-    z-index: -1;
 }
 
 video {
@@ -127,8 +126,9 @@ video {
     padding: 0 15px;
     width: 33%;
     color: white;
-    margin-top: 419px;
+    margin-top: 375px;
     margin-left: 20px;
+    position: relative;
 }
 
 .contenido-video h1 {
@@ -142,10 +142,10 @@ video {
 .videoCta {
     border: solid 1px white;
     text-align: center;
-    width: 90px;
+    width: 110px;
     margin-left: 150px;
     margin-top: 30px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 /* Style for main */
@@ -300,7 +300,9 @@ video {
     display: flex;
     flex-direction: row;
     height: 500px;
-    background-color: white;
+    background-image: url(/IMG/fondoBlancoHojas.png);
+    background-size: cover;
+    background-position-x: 20% ;
     align-items: center;
     justify-content: center;
 }
@@ -311,17 +313,46 @@ video {
     background-color: #DDB791;
     border-radius: 30px;
     transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    box-shadow: 10px 10px 10px grey;
 }
 
 .ctaSection:hover {
     transform: scale(1.05);
 }
 
+.ctaSection h2 {
+    color: white;
+    opacity: 100;
+    transition: all 0.8s ease;
+    font-size: 36px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.ctaSection p {
+    color: white;
+    font-size: 18px;
+    margin: 30px 50px 0px 50px;
+
+}
+
+.ctaSection a {
+    color: rgb(255, 255, 255);
+    border: solid 2px white;
+    transition: all 1s ease;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
 /* Galeria */
 
 .contenedorGaleria {
-    height: 610px;
-    background-color: #FEFAE0;
+    height: 600px;
+    background-color: white;
 }
 
 .galeria {
@@ -337,7 +368,7 @@ video {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(100);
+    filter: brightness(40%);
     transition: all 1s ease;
 }
 
@@ -363,15 +394,92 @@ video {
 
 .imagen:hover {
     flex: 5;
-    filter: grayscale(0);
+    filter: brightness(100);
     filter: contrast(110%);
 }
 
-/* Stay at Avalon */
+/* Avalon & You*/
 
-.stayAvalon {
-    height: 550px;
+.avalonYou {
+    height: 700px;
     background-color: #82924B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avalonYou .titulo h2 {
+    margin-top: 70px;
+    color: white;
+    opacity: 100;
+    transition: all 0.8s ease;
+    font-size: 34px;
+}
+
+.avalonCards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.cards {
+    width: 25%;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 2px white;
+    overflow: hidden;
+    position: relative;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: hsla(195, 39%, 20%, 0.703);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.cards:hover .card-body {
+    right: 0;
+}
+
+.card-title {
+    color: white;
+}
+
+.card-body p {
+    margin: 30px;
+    text-align: justify;
+    color: white;
+    font-size: 14px;
+}
+
+.card-body a {
+    color: white;
+    border: 1px solid white;
+    width: 80px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Contenedor 4 */
@@ -438,8 +546,14 @@ video {
     display: flex;
     flex-direction: row;
     height: 70vh;
-    background-color: red;
+    background-color: white;
+    overflow: hidden;
+    margin: 20px 50px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* Footer */
 
@@ -449,4 +563,35 @@ footer {
     height: 50vh;
     background-color: black;
     color:white;
+    gap: 65px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+section img {
+    width: 200px;
+}
+
+.links {
+    color: white;
+    width: 20%;
+    margin: 20px;
+}
+
+section h3 {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+section a {
+    padding: 5px;
+}
+
+.socialMedia {
+    width: 20%;
+}
+
+.socialMedia h3 {
+    text-align: center;
+    font-weight: 400;
 }
