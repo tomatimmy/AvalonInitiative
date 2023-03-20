@@ -376,6 +376,10 @@ footer {
     width: 200px;
 }
 
+.links h2 {
+    margin-bottom: 10px;
+}
+
 .links {
     color: white;
     width: 20%;
@@ -391,11 +395,22 @@ section a {
     padding: 5px;
 }
 
+.mapa h2 {
+    margin-bottom: 10px;
+}
+
 .socialMedia {
     width: 20%;
+    display: flex;
+    flex-direction: column !important;
 }
 
 .socialMedia h3 {
     text-align: center;
     font-weight: 400;
+}
+
+.fa-brands, .fa-regular, .fa-solid {
+    font-size: 20px;
+    margin: 11px 0px;
 }
